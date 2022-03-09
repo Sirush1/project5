@@ -15,7 +15,7 @@ height:50px;
 {
  background-color:#ECF0F1;
  height:50px;
- width:1350px;
+ width:100%;
 
 }
 .center
@@ -49,9 +49,10 @@ font-family: 'montserrat' ;
 .nav
 {
   line-height: 0.5;
-  height:50px;
-  width:900px;
-
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .nav h1 
 {
@@ -77,10 +78,8 @@ display:inline-block;
 }
 .nav #text1
 {
-  float:right;
-  margin-right: 0;
-  margin-top: -40px;
-  
+  width: 60px;
+ justify-content: end;
 }
 .nav #text1 #p2
 {
@@ -113,6 +112,26 @@ width:900px;
 {
 border: #ECF0F1;  
 }
+.l1
+{
+    box-shadow: 0 0 5px 5px #f5f5f6;
+    border-radius: 15px;
+    padding: 1px;
+    margin-top: 25px;
+
+}
+#tit1
+{
+  margin-left: 80px;
+  margin-bottom: -30px;
+  margin-top: 20px;
+}
+#tit2
+{
+  margin-left: 90px;
+  margin-bottom: -30px;
+  margin-top: 20px;
+}
 .main ul li{
   list-style-type: none;
   color:#909497;
@@ -123,9 +142,8 @@ font-size: 12px;
 {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   border-radius:15px;
-  box-shadow:0 0 5px 5px #F5F5F6;
-  margin-top: 40px;
 }
 .list #col1 
 {
@@ -168,8 +186,8 @@ color: black;
 }
 .nav1
 {
+  height:100px;
 margin-top:20px;
-height:100px;
 }
 #a1 
 {
@@ -209,8 +227,8 @@ height:100px;
 }
 .nav1 #span {
 width:500px;
-height:100px;
-margin: -80px 200px 40px 200px;
+height: 50px;
+margin: -103px 200px 40px 200px;
 }
 #span span
 {
@@ -228,6 +246,10 @@ margin: -80px 200px 40px 200px;
   width: 10px;
   height:10px;
 }
+#span1
+{
+  display: none;
+}
 #span .img2 
 {
   width:35px;
@@ -235,10 +257,13 @@ margin: -80px 200px 40px 200px;
   margin-left: 30px;
 
 }
-#span .imgs
-{
+.imgs
+{     width: 75px;
+  height: 35px;
   display: flex;
-  margin-top: 10px;
+  float: left;
+  margin-left: 195px;
+  margin-top: -40px;
 }
 .imgs img
 {
@@ -247,16 +272,16 @@ margin: -80px 200px 40px 200px;
 #text2
 {
   width: 52px;
-  height:100px;
+  height:50px;
   float:right;
-  margin-top:-97px; 
+  margin-top: -90px; 
   margin-right: 0px; 
 }
 #text2 span
 {
   color:#7D818D;
   font-size: 13px;
-  font-family: 'montserrat' ;
+  font-family: 'Montserrat' ;
 }
 #text2 #p4
 {
@@ -278,34 +303,38 @@ margin: -80px 200px 40px 200px;
   content: url('img/call.png');
  
 }
+
 .footer
 {
 float:bottom;
 background-color:#ECF0F1;
-height:200px;
 width:100%;
-
+margin-top: 100px;
+}
+.foot
+{
+width:900px;
+height:200px; 
+margin: 0 auto; 
+display: flex;
+justify-content: space-between;
 }
 .logofoot
 {
+margin-top: 30px;
 background-image: url('img/image1.png');
 background-repeat:no-repeat;
 filter:contrast(88%);
-float:left;
-width:200px;
-height:40px;
-margin-top:10px;
+width:180px;
+height:30px;
 }
 .logo1
 {
-margin-left:300px;
-margin-top:50px;
 width:150px;
 height:50px;
 }
 .logo1 p
 {
-text-align:center;
 color:#909497;
 font-family:montserrat;
 font-size: 12px;
@@ -314,15 +343,17 @@ font-size: 12px;
 {
 color:#909497;
 font-family:montserrat;
-margin-top:40px;
-margin-left:300px;
-float:left;
 font-size: 12px;
+
 }
-.tab2 {
-  float: right;
-  margin-right: 800px;
-  margin-top: 30px;
+#p
+{
+  margin-top: 50px;
+}
+.tab2 
+{
+width:130px;
+margin-top: 103px;
 }
 #bar a
 {
@@ -334,11 +365,11 @@ text-decoration: none;
 #bar
 {
 list-style-type: none;
+margin-left: 0px;
+padding: 0px;
 }
 .tab3 {
-  float: right;
-  margin-right: 650px;
-  margin-top: -80px;
+  width: 220px;
 }
 #bar1 a
 {
@@ -350,14 +381,17 @@ text-decoration: none;
 #bar1
 {
 list-style-type: none;
+margin-left: 0px;
+padding: 0px;
+margin-top: 113px;
+
 }
-.icon {
-    float: right;
-    margin-right: -500px;
-    margin-top: -75px;
+.icon 
+{
+  margin-top: 110px;
     width: 300px;
     height: 50px;
-}
+   }
 .icon img
 {
 filter:contrast(88%);
@@ -368,3 +402,199 @@ color:#909497;
 font-family:montserrat;
 font-size: 15px;
 }
+.icon1
+{
+  display: none;
+}
+@media screen and (max-width:1124px){
+  .header
+  {
+    display: flex;
+    width: 100%;
+  }
+  .main
+  {
+    width:100%;
+  }
+  #img
+  {
+    width:100%;
+  }
+  #img img
+  {
+    width:100%;
+  }
+  #menu
+  {
+    width:50px;
+    height:100px;
+    display: none;
+  }
+  .menubtn a
+  {
+    width:50px;
+    display: block;
+  }
+  .menubtn a span
+  {
+    height: 2px;
+    width: 20px;
+    background-color:black;
+    display: block;
+    margin-right: 0px;
+    margin-top: 3.5px;
+  }
+  .menubtn
+  {
+   width:1000px;
+   display: flex; 
+   justify-content: end;
+   padding:15px;
+  }
+ #sp
+ {
+   margin-right:0px;
+  height: 2px;
+  width: 16px;
+  background-color:black;
+  display: block;
+  margin-right: 0px;
+  margin-top: 3.5px;
+ }
+ 
+ .sp1
+ {
+   display: grid;
+ }
+ #menu a
+ {
+   background-color: #909497;
+ }
+ .span1 + #menu :hover
+ {
+  display: block;
+ }
+ .footer
+ {
+   width:100%;
+ }
+ #span
+ {
+   margin-left: 0px;
+ }
+ #span1 span
+{
+  font-size: 14px;
+  color:#7D818D; 
+  font-family: 'Montserrat' ;
+}
+ .footer
+ {
+   width:100%;
+ }
+ .main ul li
+  {
+    font-size: 18px;
+  }
+  .list
+  {
+    display: grid;
+    width:100%;
+    justify-content: start;
+  }
+  .list #col2
+  {
+    margin-top:-20px;
+  }
+  .list #col3
+  {
+    margin-top:-20px;
+  }
+  .list #col4
+  {
+    margin-top:-20px;
+  }
+  #tit1 {
+    margin-left: 38px;
+  }
+  #tit2 {
+    margin-left: 38px;
+  }
+}
+@media screen and (max-width:930px){
+  .main{
+    width:100%;
+  }
+}
+@media screen and (max-width:940px){
+  .foot{
+    width:98%;
+    padding:0px 0px 0px 10px;
+  }
+  .footer{
+    padding:0px 0px 0px 10px;
+    width: 98%;
+  }
+  .icon
+  {
+    display: none;
+  }
+  .icon1 img
+{
+filter:contrast(88%);
+}
+.icon1 p
+{
+color:#909497;
+font-family:montserrat;
+font-size: 15px;
+}
+.icon1
+{
+  display: block;
+}
+  .tab2
+{
+ display: none; 
+}
+.tab3
+{
+ display: none; 
+}
+}
+@media screen and (max-width:726px){
+  .slide .sl1{
+    display: none;
+    }
+}
+ @media screen and (max-width:700px){
+  .slide .sl2{
+    display: none;
+    }
+  #img img
+  {
+    height:400px;
+  }
+}
+  @media screen and (max-width:576px){
+    #img img
+  {
+    height:300px;
+  }
+#span1
+ {
+   display: block;
+ }
+ #span
+ {
+   display: none;
+ }
+ .sl2 .sl3
+ {
+   margin-right: 5px;
+ }
+  }
+ 
+ 
+ 
+
