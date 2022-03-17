@@ -13,7 +13,7 @@ filter: contrast(95%);
 }
 .container
 {
-    width: 900px !important;
+    max-width: 900px !important;
 }
 .h-100 p-5
 {
@@ -37,13 +37,19 @@ ul li a
     font-size: 12px;  
     font-family: 'montserrat'; 
   }
+  .p7
+  {
+    font-size: 12px;  
+    font-family: 'montserrat'; 
+  }
   .span
   {
       margin:0 auto;
       font-size: 12px; 
       font-family: 'montserrat'; 
   }
-  .h-100 p
+  
+  .app p
   {
     font-size: 12px;    
     font-family: 'montserrat';  
@@ -106,10 +112,17 @@ ul li a
 {
     font-size:12px ;
     font-family: 'montserrat';
-    display:inline-block;
+    display:inline;
 }
 .col5 
 {
     filter:contrast(0%); 
 }
-  
+.footerIcon
+{
+    margin-bottom: 0px;
+}
+.p5 
+{
+    padding-top: 50px;
+}
